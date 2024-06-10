@@ -20,3 +20,6 @@ Route::get('/login', function () {
 Route::get('/aboutme', function () {
     return view('aboutme'); // Route for the 'login' page
 });
+Route::get('/calendar', function () {
+    return view('calendar'); // Route for the 'login' page
+});

@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.0.2/tailwind.min.css" rel="stylesheet">
         <script src="https://cdn.tailwindcss.com"></script>
-
+        @yield('title')
         <title>Project_Rhuzzel</title>
 
         <!-- Fonts -->
@@ -17,6 +17,7 @@
             
         </style>
     </head>
+    @yield('content')
     <body>
         <nav class="bg-gray-800">
             <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
@@ -54,7 +55,7 @@
                       <a href="#" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Dashboard</a>
                       <a href="{{ url('aboutme') }}" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">About me</a>
                       <a href="{{ url('projects') }}" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Projects</a>
-                      <a href="{{ url('calendar') }}" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Calendar</a>
+                      <a href="{{ url('bookme') }}" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Calendar</a>
                     </div>
                   </div>
                 </div>
